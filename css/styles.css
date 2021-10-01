@@ -6,9 +6,37 @@
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 body {
   color: #757575;
   font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 button {
@@ -21,6 +49,18 @@ button {
 
 .page-header {
   background-color: #fff;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -32,6 +72,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   list-style: none;
+  margin-right: 93px;
 }
 
 .logo-part {
@@ -44,13 +85,31 @@ button {
 }
 
 .page-header-links {
+  display: flex;
+  align-items: center;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   list-style: none;
+}
+
+.page-header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.page-header-contacts a {
+  text-decoration: none;
+  color: #757575;
 }
 
 .page-header-links :hover {
@@ -61,27 +120,9 @@ button {
   color: #2196f3;
 }
 
-.page-header-links a {
-  color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-/* .page-header-contacts {
-  color: #757575;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  list-style: none;
-} */
-
-.ph-contact {
+.ph-mail {
+  margin-right: 50px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -91,21 +132,46 @@ button {
   text-decoration: none;
 }
 
+.ph-tel {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-itm:not(:first-child) {
+  margin-left: 50px;
+}
+
+.ph-mail,
+.ph-tel :hover {
+  color: #2196f3;
+}
+
+.ph-mail,
+.ph-tel :focus {
+  color: #2196f3;
+}
+
+.page-header-links a {
+  color: #212121;
+  text-decoration: none;
+}
+
 .link1 {
   color: #757575;
-}
-
-.ph-contact :hover {
-  color: #2196f3;
-}
-
-.ph-contact :focus {
-  color: #2196f3;
 }
 
 .advantage {
   background-color: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
 }
 
 .advantage-logo {
@@ -114,9 +180,15 @@ button {
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
+  padding-right: 237px;
+  padding-left: 237px;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .advantage-button {
+  width: 200px;
+  height: 50px;
   background-color: #2196f3;
   color: #fff;
   font-weight: 700;
@@ -152,8 +224,13 @@ button {
   letter-spacing: 0.03em;
 }
 
+.adv-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about {
   background-color: #fff;
+  padding-bottom: 94px;
 }
 
 .about-logo {
@@ -163,14 +240,26 @@ button {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .about-items {
   list-style: none;
+  color: #757575;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  display: flex;
+}
+
+.ab-img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-logo {
@@ -180,6 +269,7 @@ button {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .our-team-member {
@@ -249,7 +339,6 @@ button {
 .foot-contact {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.2;
