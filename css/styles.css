@@ -272,8 +272,17 @@ button {
   margin-bottom: 50px;
 }
 
+.our-team-list {
+  display: flex;
+}
+
 .our-team-member {
   list-style: none;
+  background-color: #fff;
+}
+
+.our-team-member:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team-name {
@@ -283,6 +292,8 @@ button {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our-team-work {
@@ -292,10 +303,32 @@ button {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .foot {
   background-color: #2f303a;
+}
+
+.foot-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-logo {
+  margin-bottom: 20px;
+}
+
+.foot-address {
+  list-style: none;
+}
+
+.foot-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.foot-list {
+  list-style: none;
 }
 
 .foot-logo-part-one {
@@ -315,14 +348,7 @@ button {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-.foot-address {
-  list-style: none;
-}
-
-.foot-list {
-  list-style: none;
+  margin-bottom: 20px;
 }
 
 .foot-address-location {
@@ -358,6 +384,21 @@ button {
   list-style: none;
 }
 
+.portfolio ul {
+  list-style: none;
+}
+
+.port-but {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: none;
+}
+
+.pb:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pb {
   list-style: none;
 }
@@ -371,6 +412,12 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-radius: 4px;
+  border: none;
 }
 
 .portfolio-button:hover {
@@ -381,6 +428,34 @@ button {
 .portfolio-button:focus {
   background-color: #2196f3;
   color: #fff;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-container:not(:nth-child(3n)) {
+  margin-bottom: -30px;
+  margin-right: -30px;
+}
+
+.portfolio-itms {
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio-itms:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+}
+
+.container-card {
+  padding: 20px 24px;
 }
 
 .portfolio-name {
@@ -397,4 +472,5 @@ button {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-top: 4px;
 }
